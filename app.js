@@ -16,7 +16,7 @@ const app = express();
 //Connection string with the database {MongoDb}
 mongoose.connect('mongodb://127.0.0.1:27017/?gssapiServiceName=mongodb/node-angular', {useNewUrlParser: true})
 .then(() => {
-    console.log('Succes connecting to MongoDB!');
+    console.log('Successfully connected to MongoDB!');
 })
 .catch((e) => {
     console.log('Error, ' + e.message);

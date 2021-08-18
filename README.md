@@ -5,7 +5,7 @@ Projeto feito atraves do curso - Angular & NodeJS - The MEAN Stack Guide [2021 E
 
 ## Development server
 
-Use o comando `npm start` para iniciar um servidor de desenvolvimento. Navega para acessar a api basta conectar a rota `http://localhost:3000/`.
+Use o comando `npm start` para iniciar um servidor de desenvolvimento. Acesse a rota `http://localhost:3000/` para utilizar a api.
 
 ## Database
 
