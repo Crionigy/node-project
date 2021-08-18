@@ -13,9 +13,10 @@ const app = express();
 
 //#region MongoDb
 
-mongoose.connect('mongodb://172.17.0.2:27017/node-angular', {useNewUrlParser: true})
+//Connection string with the database {MongoDb}
+mongoose.connect('mongodb://127.0.0.1:27017/?gssapiServiceName=mongodb/node-angular', {useNewUrlParser: true})
 .then(() => {
-    console.log('Connected!');
+    console.log('Succes connecting to MongoDB!');
 })
 .catch((e) => {
     console.log('Error, ' + e.message);
@@ -23,6 +24,7 @@ mongoose.connect('mongodb://172.17.0.2:27017/node-angular', {useNewUrlParser: tr
 
 //#endregion
 
+//#region Configs
 app.use(bodyParser.json());
 
 app.use(logger('dev'));
